@@ -27,4 +27,4 @@ RUN ./gradlew build -x test
 
 
 ENTRYPOINT java -jar ./build/libs/demo-0.0.1-SNAPSHOT.jar 
-EXPOSE 8080
+EXPOSE 8080 
