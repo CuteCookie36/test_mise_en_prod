@@ -12,9 +12,8 @@ services:
       SPRING_DATASOURCE_USERNAME: covid
       SPRING_DATASOURCE_PASSWORD: covid
     ports:
-      - 8080:8080
+     - 8080:8080
 
-  
   database:
     image: postgres:latest
     environment:
@@ -24,6 +23,4 @@ services:
       interval: 30s
       timeout: 30s
       retries: 2
-
-    
     
