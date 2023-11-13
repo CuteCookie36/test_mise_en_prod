@@ -17,14 +17,12 @@ RUN ./gradlew build -x test
 # Commande pour lancer l'application
 #CMD ["java", "-jar", "./build/libs/demo-0.0.1-SNAPSHOT.jar"]
 
-# RUN <<EOF
-# curl --silent --show-error https://getcomposer.org/installer --output /tmp/composer-setup.php
-# php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer -version=2.6.2
-# EOF
+RUN addgroup -S spring && adduser -S spring -G spring
+RUN chown -R spring:spring /app
 
-# RUN composer update
-# RUN composer install
-
+USER spring:spring
 
 ENTRYPOINT java -jar ./build/libs/demo-0.0.1-SNAPSHOT.jar 
 EXPOSE 8080
+
+

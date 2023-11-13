@@ -11,6 +11,9 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://database:5432/covid
       SPRING_DATASOURCE_USERNAME: covid
       SPRING_DATASOURCE_PASSWORD: covid
+    ports:
+      - 8080:8080
+
   
   database:
     image: postgres:latest
