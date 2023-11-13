@@ -1,0 +1,18 @@
+#Public
+http://localhost:4200/users
+
+
+###
+
+# Prive
+POST http://localhost:4200/users
+Authorization: Basic dXNlcjpwYXNzd29yZA==
+Content-Type: application/json
+
+{"username":"titi","passwd":"lol"}
+
+###
+# Prive
+GET http://localhost:4200/login
+Authorization: Basic dXNlcjpwYXNzd29yZA==
+Content-Type: application/json
