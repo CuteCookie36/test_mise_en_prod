@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    docker.build("test_mise_en_prod-java-1");
+                    docker.build("test_mise_en_prod-java");
                 }
             }
         }
@@ -19,7 +19,7 @@ pipeline {
         stage('Push') {
             steps {
                 sh 'docker login -u stella639445 -p SteakHache5445!'
-                sh 'docker image push test_mise_en_prod-java-1'
+                sh 'docker image push test_mise_en_prod-java'
             }
         }
     }
