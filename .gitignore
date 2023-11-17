@@ -5,3 +5,4 @@
 build
 
 .fake
+jenkins-compose/jenkins-compose/
