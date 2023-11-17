@@ -1,3 +1,11 @@
+FROM gradle:8.4-jdk17
+
+WORKDIR /app
+
+COPY . .
+
+RUN gradle build
+  
  # Base image
 FROM eclipse-temurin:17-jdk-jammy
 

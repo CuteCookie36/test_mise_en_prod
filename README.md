@@ -43,4 +43,17 @@ Si vous souhaitez rebuild le docker compose:
 Si vous souhaitez lancer un shell après avoir lancé les conteneurs:
 `docker exec -it test_mise_en_prod-database-1 /bin/bash`
 
+Docker:
 
+cloner le projet : git clone...
+lancer le docker compose
+
+Jenkins
+télécharger jenkins
+Puis lancer l'application: cd jenkins-compose && docker compose up
+
+Il faut ensuite se rendre à l'adresse http://localhost:8001 et se connecter.
+
+Et enfin créer un nouveau pipeline avec le code contenu dans le fichier 'Jenkinsfile'
+
+Il ne reste plus qu'à lancer le build pour build l'image docker et la push sur le hub, elle sera ensuite accessible avec
