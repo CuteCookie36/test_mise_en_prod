@@ -1,7 +1,7 @@
-##Docker en local:
+## Docker en local:
 Faites un git clone de : `https://github.com/CuteCookie36/test_mise_en_prod/tree/main Puis lancer la commande: docker compose up`
 
-##Docker sous Jenkins:
+## Docker sous Jenkins:
 Faites un git clone de : `https://github.com/CuteCookie36/test_mise_en_prod/tree/tryJenkins`
 
 Mettez vous dans le repertoire jenkins-compose (attention il y en a 2, faites un ls pour vérifier qu'il y a bien le docker-compose) Puis lancer la commande: `docker compose up -d`
